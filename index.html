@@ -18,17 +18,19 @@
           <div class="logo">
             <a href="#" style="color: white"><span>J</span>unaed</a>
           </div>
-          <ul>
-            <li style="display: inline; padding: 30px" class="nav">
+          <ul id="sidemenu">
+            <li class="nav">
               <a href="#" class="bt">Home</a>
             </li>
-            <li style="display: inline; padding: 30px" class="nav">
+            <li  class="nav">
               <a href="#about" class="bt">About Me</a>
             </li>
-            <li style="display: inline; padding: 30px" class="nav">
+            <li class="nav">
               <a href="#container" class="bt">Contact Me</a>
             </li>
+            <img class="fas fa-times" src="icons/icons8-cross-50.png" alt="Error" onclick="closemenu()">
           </ul>
+          <img class="fas fa-bars" src="icons/icons8-menu-50.png" alt="Error" onclick="openmenu()">
         </div>
       </nav>
       <div class="header-text">
@@ -208,5 +210,19 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
+
+  <script>
+  
+     var sidemeu = document.getElementById("sidemenu");
+
+     function openmenu(){ 
+      sidemeu.style.right = "0";
+     }
+
+     function closemenu(){ 
+      sidemeu.style.right = "-200px";
+     }
+
+  </script>
   </body>
 </html>
