@@ -30,7 +30,15 @@ nav ul li {
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
   padding: 10px 0;
   z-index: 1000;
+  transition: transform 0.2s;
+  height: var(--navbar-height);
 }
+
+.navbar--hidden {
+  transform: translateY(calc(-1 * var(--navbar-height)));
+  box-shadow: none;
+}
+
 .sub-title {
   color: #fff;
 }
@@ -41,6 +49,8 @@ header {
   flex-wrap: wrap;
   background-color: transparent;
 }
+
+
 .navdiv {
   display: flex;
   justify-content: space-between;
@@ -75,6 +85,7 @@ body {
 .container {
   padding-top: 185px;
 }
+
 
 .row {
   display: flex;
@@ -297,10 +308,9 @@ nav .fas {
 @media only screen and (max-width: 600px) {
 
   *{  
-    padding: 0;
-    margin: 0;
+    padding: 0;margin: 0;
   }
-  
+
   .header-text {
     margin-top: 100%;
     font-size: 16px;
