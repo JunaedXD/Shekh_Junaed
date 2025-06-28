@@ -1,196 +1,474 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="icons/icons8-j-50.png"
+      type="image/x-icon"
+    />
+    <title>Shekh Junaed</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <script defer src="javascript.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="icons/icons8-j-50.png" type="image/x-icon" />
-  <title>Shekh Junaed</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="javascript.js"></script>
-</head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="navdiv">
+          <div class="logo">
+            <a href="#" style="color: white"><span>J</span>unaed</a>
+          </div>
+          <ul id="sidemenu">
+            <li class="nav">
+              <a href="#" class="bt" onclick="closemenu()">Home</a>
+            </li>
+            <li class="nav">
+              <a href="#about" class="bt" onclick="closemenu()">About Me</a>
+            </li>
+            <li class="nav">
+              <a href="#projects-section" class="bt" onclick="closemenu()"
+                >My Project's</a
+              >
+            </li>
+            <li class="nav">
+              <a href="#container" class="bt" onclick="closemenu()"
+                >Contact Me</a
+              >
+            </li>
+            <img
+              class="fas fa-times"
+              src="icons/icons8-cross-50.png"
+              alt="Error"
+              onclick="closemenu()"
+            />
+          </ul>
+          <img
+            class="fas fa-bars"
+            src="icons/icons8-menu-50.png"
+            alt="Error"
+            onclick="openmenu()"
+          />
+        </div>
+      </nav>
+    </header>
+    <main onclick="closemenu()">
+      <div class="header-text" onclick="closemenu()">
+        <h1 style="color: white">
+          Hi, I'm Shekh <span>Junaed</span> <br />
+          And I am
+          <p class="animated-text"><span></span></p>
+        </h1>
+      </div>
+      <div id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img
+                src="Images/hands-typing-on-laptop-programming-600nw-2480023489.webp"
+                alt="Error"
+              />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                Hi, I'm Shekh Junaed — a 19-year-old web development enthusiast
+                from Kolkata, West Bengal, India. I’m currently a student, and
+                over the past five months, I’ve been diving deep into the world
+                of web development, learning how to build websites just like the
+                one you’re visiting right now! Creating websites started off as
+                a simple interest, but it quickly turned into a passion and a
+                hobby. I love experimenting with design, structure, and
+                functionality to bring ideas to life on the internet. Whether
+                it’s a personal blog, portfolio, or something entirely new, I
+                enjoy the creative process of turning code into something real
+                and useful. Apart from web development, I’m also deeply
+                interested in Artificial Intelligence and a proud space
+                enthusiast. The future of tech and space exploration fascinates
+                me, and I often spend my free time learning more about these
+                fields. If you’re looking for someone to build a clean,
+                functional, and personalized website—or if you just want to talk
+                tech, AI, or space—I’d be happy to connect. Feel free to reach
+                out!
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">
+                  Skills
+                </p>
+                <p class="tab-links" onclick="opentab('experience')">
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="skills">
+                <ul>
+                  <li><span>Web development</span><br />Frontend Developer</li>
+                  <li><span>Editor</span><br />Video Editing</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experience">
+                <ul>
+                  <li><span>1 Year</span><br />Frontend Developer</li>
+                  <li><span>5 Year</span><br />Video Editing</li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>Self Learning</span><br />Frontend Developer</li>
+                  <li><span>Self Learning</span><br />Video Editing</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<body>
-  <header>
-  <nav id="navbar">
-      <div class="navdiv">
-        <div class="logo">
-          <a href="#" style="color: white"><span>J</span>unaed</a>
-        </div>
-        <ul id="sidemenu">
-          <li class="nav">
-            <a href="#" class="bt" onclick="closemenu()">Home</a>
-          </li>
-          <li class="nav">
-            <a href="myprojects.html" class="bt" onclick="closemenu()">My Project's</a>
-          </li>
-          <li class="nav">
-            <a href="#about" class="bt" onclick="closemenu()">About Me</a>
-          </li>
-          <li class="nav">
-            <a href="#container" class="bt" onclick="closemenu()">Contact Me</a>
-          </li>
-          <img class="fas fa-times" src="icons/icons8-cross-50.png" alt="Error" onclick="closemenu()">
-        </ul>
-        <img class="fas fa-bars" src="icons/icons8-menu-50.png" alt="Error" onclick="openmenu()" >
-      </div>
-    </nav>
-</header>
-  <main onclick="closemenu()">
-    <div class="header-text" onclick="closemenu()">
-      <h1 style="color: white;">Hi, I'm Shekh <span>Junaed</span> <br />
-        And I am <p class="animated-text"><span></span></p></h1>
-    </div>
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="Images/hands-typing-on-laptop-programming-600nw-2480023489.webp" alt="Error" />
-          </div>
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Hi, I'm Shekh Junaed — a 19-year-old web development enthusiast
-              from Kolkata, West Bengal, India. I’m currently a student, and
-              over the past five months, I’ve been diving deep into the world
-              of web development, learning how to build websites just like the
-              one you’re visiting right now! Creating websites started off as
-              a simple interest, but it quickly turned into a passion and a
-              hobby. I love experimenting with design, structure, and
-              functionality to bring ideas to life on the internet. Whether
-              it’s a personal blog, portfolio, or something entirely new, I
-              enjoy the creative process of turning code into something real
-              and useful. Apart from web development, I’m also deeply
-              interested in Artificial Intelligence and a proud space
-              enthusiast. The future of tech and space exploration fascinates
-              me, and I often spend my free time learning more about these
-              fields. If you’re looking for someone to build a clean,
-              functional, and personalized website—or if you just want to talk
-              tech, AI, or space—I’d be happy to connect. Feel free to reach
-              out!
-            </p>
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">
-                Experience
-              </p>
-              <p class="tab-links" onclick="opentab('education')">
-                Education
-              </p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>Web development</span><br />Frontend Developer</li>
-                <li><span>Editor</span><br />Video Editing</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li><span>1 Year</span><br />Frontend Developer</li>
-                <li><span>5 Year</span><br />Video Editing</li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li><span>Self Learning</span><br />Frontend Developer</li>
-                <li><span>Self Learning</span><br />Video Editing</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="container">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Get In <span>Touch</span></h1>
-                    <div class="social-icons">
-                      <a href="mailto:shekhjunaed705@gmail.com" target="_main"><img src="icons/icons8-email.png" alt="Error"  height="20px"></a>
-                      <a href="tel:+918250401880" target="_main"><img src="icons/icons8-phone.png" alt="Error"  height="20px"></a>
-                        <a href="https://x.com/JunaedSheikh1" target="_main"><img src="icons/icons8-twitter-50.png" alt="Error"  height="20px"></a>
-                        <a href="https://www.linkedin.com/in/shekh-junaed-9382a6284?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdKGJdgmlSd2sIdZtUzUzXg%3D%3D" target="_main"><img src="icons/icons8-linkedin-50.png" alt="Error" style="height: 20px;"></a>
-                    </div>
-          </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
-              <input type="email" name="Email" placeholder="Your Email" required />
-              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="masg" style="color: #61b752"></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
+      <section class="projects-section" id="projects-section">
+        <h2>Some Of My Projects</h2>
 
-  <footer>
-    <div class="copyright">
-      <p style="color: white">
-        © 2025 Shekh Junaed. All rights reserved. Made by Junaed
-      </p>
-    </div>
-  </footer>
+        <div class="carousel-container">
+          <button class="arrow left hidden" id="leftArrow">‹</button>
+          <div class="carousel-track" id="carousel">
+            <!-- Project Cards -->
+            <div class="project-card">
+              <div>
+                <div class="project-title">Blog Website</div>
+                <div class="project-desc">
+                  A clean and modern blog layout with animations.
+                </div>
+              </div>
+              <a
+                href="https://yourblogwebsite.com"
+                target="_blank"
+                class="project-button"
+                >View</a
+              >
+            </div>
+            <div class="project-card">
+              <div>
+                <div class="project-title">Weather App</div>
+                <div class="project-desc">
+                  Get real-time weather updates using OpenWeather API.
+                </div>
+              </div>
+              <a
+                href="https://yourweatherapp.com"
+                target="_blank"
+                class="project-button"
+                >View</a
+              >
+            </div>
+            <div class="project-card">
+              <div>
+                <div class="project-title">Portfolio</div>
+                <div class="project-desc">
+                  My portfolio site with all skills, links, and animations.
+                </div>
+              </div>
+              <a
+                href="https://yourportfolio.com"
+                target="_blank"
+                class="project-button"
+                >View</a
+              >
+            </div>
+            <div class="project-card">
+              <div>
+                <div class="project-title">To-Do App</div>
+                <div class="project-desc">
+                  A minimal to-do list with local storage and animations.
+                </div>
+              </div>
+              <a
+                href="https://todoapp.com"
+                target="_blank"
+                class="project-button"
+                >View</a
+              >
+            </div>
+            <div class="project-card">
+              <div>
+                <div class="project-title">Chat App</div>
+                <div class="project-desc">
+                  A real-time chat app built with WebSocket and Node.js.
+                </div>
+              </div>
+              <a
+                href="https://chatapp.com"
+                target="_blank"
+                class="project-button"
+                >View</a
+              >
+            </div>
+            <div class="project-card">
+              <div>
+                <div class="project-title">E-commerce UI</div>
+                <div class="project-desc">
+                  A frontend template for shopping with filter and cart.
+                </div>
+              </div>
+              <a
+                href="https://ecommerceui.com"
+                target="_blank"
+                class="project-button"
+                >View</a
+              >
+            </div>
+          </div>
+          <button class="arrow right" id="rightArrow">›</button>
+        </div>
+      </section>
+
+      <section class="stats-section" id="stats">
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-clock"></i></div>
+          <div class="stat-number" data-target="1000" data-speed="normal">
+            0
+          </div>
+          <div class="stat-label">Hours Worked</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-building"></i></div>
+          <div class="stat-number" data-target="5" data-speed="slow">0</div>
+          <div class="stat-label">Companies</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-code"></i></div>
+          <div class="stat-number" data-target="20" data-speed="slow">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon"><i class="fas fa-smile"></i></div>
+          <div class="stat-number" data-target="50" data-speed="normal">0</div>
+          <div class="stat-label">Happy Customers</div>
+        </div>
+      </section>
+
+      <div id="container">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Get In <span>Touch</span></h1>
+              <div class="social-icons">
+                <a href="mailto:shekhjunaed705@gmail.com" target="_main"
+                  ><img src="icons/icons8-email.png" alt="Error" height="20px"
+                /></a>
+                <a href="tel:+918250401880" target="_main"
+                  ><img src="icons/icons8-phone.png" alt="Error" height="20px"
+                /></a>
+                <a href="https://x.com/JunaedSheikh1" target="_main"
+                  ><img
+                    src="icons/icons8-twitter-50.png"
+                    alt="Error"
+                    height="20px"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/shekh-junaed-9382a6284?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BdKGJdgmlSd2sIdZtUzUzXg%3D%3D"
+                  target="_main"
+                  ><img
+                    src="icons/icons8-linkedin-50.png"
+                    alt="Error"
+                    style="height: 20px"
+                /></a>
+              </div>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input
+                  type="text"
+                  name="Name"
+                  placeholder="Your Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="Email"
+                  placeholder="Your Email"
+                  required
+                />
+                <textarea
+                  name="Message"
+                  rows="6"
+                  placeholder="Your Message"
+                ></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="masg" style="color: #61b752"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p style="color: white">
+          © 2025 Shekh Junaed. All rights reserved. Made by Junaed
+        </p>
+      </div>
+    </footer>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycby8T3AZ-6qD1Kq8QyLiCBpYPhn8pge0vK2QrCiW7KaG-_AoyytuEIEyyN_VcGtEqQvylw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const masg = document.getElementById("masg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            masg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              masg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    <script>
+      document.onselectstart = () => {
+        event.preventDefault();
+      };
+    </script>
+  </body>
   <script>
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
-
-    function opentab(tabname) {
-      for (tablink of tablinks) {
-        tablink.classList.remove("active-link");
-      }
-      for (tabcontent of tabcontents) {
-        tabcontent.classList.remove("active-tab");
-      }
-
-      event.currentTarget.classList.add("active-link");
-
-      document.getElementById(tabname).classList.add("active-tab");
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-100vh";
     }
   </script>
 
   <script>
-    const scriptURL =
-      "https://script.google.com/macros/s/AKfycby8T3AZ-6qD1Kq8QyLiCBpYPhn8pge0vK2QrCiW7KaG-_AoyytuEIEyyN_VcGtEqQvylw/exec";
-    const form = document.forms["submit-to-google-sheet"];
-    const masg = document.getElementById("masg");
+    const statsSection = document.getElementById("stats");
+    const counters = document.querySelectorAll(".stat-number");
+    let animated = false;
 
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      fetch(scriptURL, { method: "POST", body: new FormData(form) })
-        .then((response) => {
-          masg.innerHTML = "Message sent successfully!";
-          setTimeout(function () {
-            masg.innerHTML = "";
-          }, 5000);
-          form.reset();
-        })
-        .catch((error) => console.error("Error!", error.message));
-    });
+    const animateCounters = () => {
+      counters.forEach((counter) => {
+        const target = +counter.getAttribute("data-target");
+        const speedType = counter.getAttribute("data-speed");
+
+        const duration = speedType === "slow" ? 3000 : 3000;
+        const frameRate = 30;
+        const steps = duration / frameRate;
+        const increment = target / steps;
+
+        let count = 0;
+
+        const update = setInterval(() => {
+          count += increment;
+          if (count >= target) {
+            clearInterval(update);
+            counter.textContent = target + (target > 1 ? "+" : "");
+          } else {
+            counter.textContent = Math.floor(count);
+          }
+        }, frameRate);
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !animated) {
+            animateCounters();
+            animated = true;
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.4,
+      }
+    );
+
+    observer.observe(statsSection);
   </script>
 
   <script>
-  document.onselectstart = () => {
-    event.preventDefault();
-  };
-</script>
+    const carousel = document.getElementById("carousel");
+    const leftArrow = document.getElementById("leftArrow");
+    const rightArrow = document.getElementById("rightArrow");
 
+    function updateArrowVisibility() {
+      const scrollLeft = carousel.scrollLeft;
+      const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
 
-</body>
-<script>
-  var sidemenu = document.getElementById("sidemenu");
-  function openmenu() {
-    sidemenu.style.right = "0";
-  }
-  function closemenu() {
-    sidemenu.style.right = "-100vh";
-  }
+      leftArrow.classList.toggle("hidden", scrollLeft <= 0);
+      rightArrow.classList.toggle("hidden", scrollLeft >= maxScrollLeft - 1);
+    }
 
+    function moveSlide(direction) {
+      const cardWidth =
+        carousel.querySelector(".project-card").offsetWidth + 20;
+      carousel.scrollBy({ left: direction * cardWidth, behavior: "smooth" });
+    }
 
-</script>
+    leftArrow.addEventListener("click", () => {
+      moveSlide(-1);
+    });
 
+    rightArrow.addEventListener("click", () => {
+      moveSlide(1);
+    });
+
+    // Show/hide arrows on scroll
+    carousel.addEventListener("scroll", updateArrowVisibility);
+    window.addEventListener("resize", updateArrowVisibility);
+
+    // Touch/drag support
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    carousel.addEventListener("mousedown", (e) => {
+      isDown = true;
+      carousel.classList.add("active");
+      startX = e.pageX - carousel.offsetLeft;
+      scrollLeft = carousel.scrollLeft;
+    });
+
+    carousel.addEventListener("mouseleave", () => (isDown = false));
+    carousel.addEventListener("mouseup", () => (isDown = false));
+    carousel.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - carousel.offsetLeft;
+      const walk = (x - startX) * 1.5; // speed
+      carousel.scrollLeft = scrollLeft - walk;
+    });
+
+    // Initialize arrows visibility
+    window.addEventListener("load", updateArrowVisibility);
+  </script>
 </html>
